@@ -1,3 +1,333 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="edit.css" >
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="nav-wrapper orange">
+        <div class="container">
+          <a href="#" class="brand-logo flow-text">Koskin lounaat</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+      </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+
+    <!--WEEK Selection -->
+      <div class="row section container">
+        <div class="col">
+          <a class="waves-effect waves-light btn"><i class="small material-icons">arrow_back</i></a>
+          <a class="btn disabled"><h6>VK 22</h6></a>
+          <a class="waves-effect waves-light btn"><i class="small material-icons">arrow_forward</i></a>
+        </div>    
+      </div>
+
+    <!--Select Lunch time-->
+    <div class="container orange lighten-5">
+      <div class="row valign-wrapper tigth orange lighten-4">
+          <div class="col center">
+            <label><b>22.15.2019</b></label>
+            <p>MAANANTAI</p>
+          </div>
+          <div class="col center ">
+              <label>Lounas alkaa</label>
+              <input type="text" placeholder="11:00" class="timepicker center">
+          </div>
+          <div class="col center ">
+              <b>-</b>
+          </div>
+          <div class="col center  ">
+            <label>Lounas päätty</label>  
+            <input type="text" placeholder="14:00" class="timepicker center">  
+          </div>
+      </div>
+
+      <!--Input food -->
+      <div class="row tigth">
+          <div class="input-field col m2 s4">
+              <select>
+                <option value="" disabled selected>tyyppi</option>
+                <option value="1">Ruoka</option>
+                <option value="2">Keitto</option>
+                <option value="3">Jälkkäri</option>
+                <option value="4">Salaatti</option>
+                <option value="5">SULJETTU</option>
+              </select>
+              <label>Ruoan tyyppi</label>
+            </div>
+
+
+          <div class="input-field col m6 s12">
+            <input type="text" id="description" placeholder="Ruoan kuvaus" class="autocomplete">
+            <label for="description">Kuvaus</label>
+          </div>
+
+          <div class="input-field col s6 m2">
+              <select multiple>
+                <option value="-" disabled selected>-</option>
+                <option value="1">VE</option>
+                <option value="2">VL</option>
+                <option value="3">L</option>
+                <option value="4">G</option>
+              </select>
+              <label>Merkinnät</label>
+          </div>
+
+
+              <div class="input-field col s4 m1">
+                <input id="price" type="text" placeholder="8,90" class="validate">
+                <label for="price">Hinta</label>
+              </div>
+
+              <!--Remove button-->
+              <div class="col s1 m1 margin-top-3">
+                  <a class="btn-floating disabled btn-small z-depth-1 waves-effect waves-light red"><i class="material-icons">clear</i></a>
+              </div>
+
+
+      </div>
+                    <!--Input food -->
+      <div class="row tight ">
+          <div class="input-field col m2 s4">
+              <select>
+                <option value="" disabled selected>tyyppi</option>
+                <option value="1">Ruoka</option>
+                <option value="2">Keitto</option>
+                <option value="3">Jälkkäri</option>
+                <option value="4">Salaatti</option>
+                <option value="5">SULJETTU</option>
+              </select>
+              <label>Ruoan tyyppi</label>
+            </div>
+
+
+          <div class="input-field col m6 s12">
+            <input type="text" id="description" placeholder="Ruoan kuvaus" class="autocomplete">
+            <label for="description">Kuvaus</label>
+          </div>
+          <!-- Input allergic-->
+          <div class="input-field col s6 m2">
+              <select multiple>
+                <option value="-" disabled selected>-</option>
+                <option value="1">VE</option>
+                <option value="2">VL</option>
+                <option value="3">L</option>
+                <option value="4">G</option>
+              </select>
+              <label>Merkinnät</label>
+          </div>
+
+            <!-- Input price-->
+              <div class="input-field col s4 m1">
+                <input id="price" type="text" placeholder="8,90" class="validate">
+                <label for="price">Hinta</label>
+              </div>
+              
+              <!--Remove button-->
+              <div class="col s1 m1 margin-top-3">
+                  <a class="btn-floating btn-small z-depth-1 waves-effect waves-light red"><i class="material-icons">clear</i></a>
+                </div>
+
+
+        </div>
+         
+        <!-- Add new food button-->
+        <div class="row ">  
+          <div class="col margin-left-3 margin-bottom-3 margin-top-0">
+            <a class=" btn waves-effect z-depth-3 waves-light green"><i class="material-icons">add</i></a>
+          </div>
+        </div>
+
+      </div>
+
+          
+
+
+          <!-- <div class="col s2 m6 s2">
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>G</span>
+              </label>
+            </div>
+            <div class="col s2 m6 s2">
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>G</span>
+              </label>
+            </div> -->
+
+
+        </div>
+     <!--Select Lunch time-->
+     <div class="container orange lighten-5">
+        <div class="row valign-wrapper tigth orange lighten-4">
+            <div class="col center">
+              <label><b>22.15.2019</b></label>
+              <p>MAANANTAI</p>
+            </div>
+            <div class="col center ">
+                <label>Lounas alkaa</label>
+                <input type="text" placeholder="11:00" class="timepicker center">
+            </div>
+            <div class="col center ">
+                <b>-</b>
+            </div>
+            <div class="col center  ">
+              <label>Lounas päätty</label>  
+              <input type="text" placeholder="14:00" class="timepicker center">  
+            </div>
+        </div>
+  
+        <!--Input food -->
+        <div class="row tigth">
+            <div class="input-field col m2 s4">
+                <select>
+                  <option value="" disabled selected>tyyppi</option>
+                  <option value="1">Ruoka</option>
+                  <option value="2">Keitto</option>
+                  <option value="3">Jälkkäri</option>
+                  <option value="4">Salaatti</option>
+                  <option value="5">SULJETTU</option>
+                </select>
+                <label>Ruoan tyyppi</label>
+              </div>
+  
+  
+            <div class="input-field col m6 s12">
+              <input type="text" id="description" placeholder="Ruoan kuvaus" class="autocomplete">
+              <label for="description">Kuvaus</label>
+            </div>
+  
+            <div class="input-field col s6 m2">
+                <select multiple>
+                  <option value="-" disabled selected>-</option>
+                  <option value="1">VE</option>
+                  <option value="2">VL</option>
+                  <option value="3">L</option>
+                  <option value="4">G</option>
+                </select>
+                <label>Merkinnät</label>
+            </div>
+  
+  
+                <div class="input-field col s4 m1">
+                  <input id="price" type="text" placeholder="8,90" class="validate">
+                  <label for="price">Hinta</label>
+                </div>
+  
+                <!--Remove button-->
+                <div class="col s1 m1 margin-top-3">
+                    <a class="btn-floating disabled btn-small z-depth-1 waves-effect waves-light red"><i class="material-icons">clear</i></a>
+                </div>
+  
+  
+        </div>
+                      <!--Input food -->
+        <div class="row tight ">
+            <div class="input-field col m2 s4">
+                <select>
+                  <option value="" disabled selected>tyyppi</option>
+                  <option value="1">Ruoka</option>
+                  <option value="2">Keitto</option>
+                  <option value="3">Jälkkäri</option>
+                  <option value="4">Salaatti</option>
+                  <option value="5">SULJETTU</option>
+                </select>
+                <label>Ruoan tyyppi</label>
+              </div>
+  
+  
+            <div class="input-field col m6 s12">
+              <input type="text" id="description" placeholder="Ruoan kuvaus" class="autocomplete">
+              <label for="description">Kuvaus</label>
+            </div>
+            <!-- Input allergic-->
+            <div class="input-field col s6 m2">
+                <select multiple>
+                  <option value="-" disabled selected>-</option>
+                  <option value="1">VE</option>
+                  <option value="2">VL</option>
+                  <option value="3">L</option>
+                  <option value="4">G</option>
+                </select>
+                <label>Merkinnät</label>
+            </div>
+  
+              <!-- Input price-->
+                <div class="input-field col s4 m1">
+                  <input id="price" type="text" placeholder="8,90" class="validate">
+                  <label for="price">Hinta</label>
+                </div>
+                
+                <!--Remove button-->
+                <div class="col s1 m1 margin-top-3">
+                    <a class="btn-floating btn-small z-depth-1 waves-effect waves-light red"><i class="material-icons">clear</i></a>
+                  </div>
+  
+  
+          </div>
+           
+          <!-- Add new food button-->
+          <div class="row ">  
+            <div class="col margin-left-3 margin-bottom-3 margin-top-0">
+              <a class=" btn waves-effect z-depth-3 waves-light green"><i class="material-icons">add</i></a>
+            </div>
+          </div>
+  
+        </div>
+  
+            
+  
+  
+            <!-- <div class="col s2 m6 s2">
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>G</span>
+                </label>
+              </div>
+              <div class="col s2 m6 s2">
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>G</span>
+                </label>
+              </div> -->
+  
+  
+          </div>
     
+    
+    <footer class="page-footer orange">
+      <div class="footer-copyright">
+        <div class="container center">
+            <p> &copy; copyright <script>document.write(new Date().getFullYear())</script> Koskinlounaat.fi</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="basic.js"></script>
+  </body>
 </html>
+      
